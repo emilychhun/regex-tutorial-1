@@ -24,7 +24,7 @@ In order to validate an user login in or an user they have to meet the matching 
 Anchors do not match any character, instead they match a position before, after, or between characters. In this case Anchors are at the start of the regex /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ in this case it will be the "^" symbol starting before the regex is matching the begining of the string and the "$" which matching the end of the string the regex pattern is applied to. 
 
 ### Quantifiers
-Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found. An example of that would be "+" symbol matching min of 1 and a max of inifinity in the first group of string and aswell in the second group of strings. In my exmaple of string its matching/looking for in the first group the accepted criteria of numbers a-z lower case,  numbers 0-9, "underscore _" , ". period", and "- hyphen" allowed. Also {2,6}
+ Quantifiers are used to quantify how many times a part of your regular expression should be repeated.  Every time you want to repeat something in a regex (an individual character, a character class or a sub-expression) you can write a quantifier after it to specify how many times it should be repeated. The following list shows some examples of the most common quantifiers:?, *, +, {N}, {,N}, {N,}, {N,M}.  
 
 
 ### Character Classes
